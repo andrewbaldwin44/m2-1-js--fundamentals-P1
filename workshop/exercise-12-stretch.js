@@ -12,3 +12,18 @@
 // NOTE: 1 and 2 are both prime numbers.
 
 // EXPECTED OUTPUT: [1, 2, 3, 5, 7, 11, 13, ...]
+
+function is_prime(number) {
+  for (let i = 2; i < number; i++) {
+    if (number % i == 0) return false;
+  }
+  return true;
+}
+
+
+let prime_numbers = [];
+for (let number = 1; number <= 200; number++) {
+  if (is_prime(number)) prime_numbers.push(number);
+}
+
+console.log(prime_numbers);
