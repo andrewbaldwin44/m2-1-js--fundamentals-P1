@@ -21,3 +21,18 @@
 
 // (Correct answer: 12586269025)
 // (The numbers get big quickly!)
+
+function fibonacci_sequence(number) {
+  if (number < 1) {
+    return 0;
+  }
+  else if (number <= 2) {
+    return 1;
+  }
+  else {
+    return fibonacci_sequence(number - 2) +
+           fibonacci_sequence(number - 1);
+  }
+}
+
+console.log(fibonacci_sequence(50));
