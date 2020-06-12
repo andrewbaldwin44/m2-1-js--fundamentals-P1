@@ -16,3 +16,13 @@
 // It's 11h. Time to train!
 // It's 12h. Time to train!
 // It's 13h. Time to eat!
+const SLEEP = [22, 23, 1, 2, 3, 4, 5];
+const EAT = [7, 13, 18];
+
+for (let i = 0; i <= 23; i++) {
+  let output = (activity) => console.log(`It's ${i}h. Time to ${activity}`);
+
+  if (SLEEP.includes(i)) output('sleep');
+  else if (EAT.includes(i)) output('eat');
+  else output('train');
+}
