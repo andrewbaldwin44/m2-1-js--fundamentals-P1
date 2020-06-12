@@ -17,3 +17,12 @@
 // _#_#_#_#
 // #_#_#_#_
 // _#_#_#_#
+
+for (let i = 0; i <= 8; i++) {
+  let row = '#_#_#_#';
+
+  if (i % 2 == 0) row = `${row}_`;
+  else row = `_${row}`;
+
+  console.log(row)
+}
